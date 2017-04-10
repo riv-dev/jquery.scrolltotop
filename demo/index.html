@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Boilerplate</title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../src/jquery.ryukyu.menu.js"></script>
+    <script src="../src/jquery.ryukyu.scrolltop.js"></script>
+    <style>
+        body {
+            height: 1500px;
+            position: relative;
+        }
+        
+        .test {
+            position: absolute;
+            bottom: 0;
+        }
+        
+        .js-menu-sub-button,
+        .js-menu-close-mobile,
+        .js-menu-hamburger-button {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- == Menu here == -->
+    <ul class="navigation__list navigation__list--collapse js-nav">
+        <li class="navigation__item navigation__item--tower">
+            <a href="/mock/tower/">
+                <span class="navigation__chars navigation__chars--en">
+																		<em class="navigation__chars--inner">TOWER</em>
+															</span>
+                <span class="navigation__chars navigation__chars--ja">
+																	<em class="navigation__chars--inner">オーシャンタワー</em>
+															</span>
+            </a>
+        </li>
+        <li class="navigation__item navigation__item--museum">
+            <a href="/mock/museum/">
+                <span class="navigation__chars navigation__chars--en">
+																		<em class="navigation__chars--inner">MUSEUM</em>
+															</span>
+                <span class="navigation__chars navigation__chars--ja">
+																	<em class="navigation__chars--inner">シェルミュージアム</em>
+															</span>
+
+            </a>
+            <ul class="navigation__list navigation__list--collapse">
+                <li class="navigation__item navigation__item--tower">
+                    <a href="/mock/tower/">
+                        <span class="navigation__chars navigation__chars--en">
+																						<em class="navigation__chars--inner">TOWER</em>
+																			</span>
+                        <span class="navigation__chars navigation__chars--ja">
+																					<em class="navigation__chars--inner">オーシャンタワー</em>
+																			</span>
+                    </a>
+                </li>
+                <li class="navigation__item navigation__item--museum">
+                    <a href="/mock/museum/">
+                        <span class="navigation__chars navigation__chars--en">
+																						<em class="navigation__chars--inner">MUSEUM</em>
+																			</span>
+                        <span class="navigation__chars navigation__chars--ja">
+																					<em class="navigation__chars--inner">シェルミュージアム</em>
+																			</span>
+
+                    </a>
+                </li>
+                <li class="navigation__item navigation__item--restaurant">
+                    <a href="/mock/restaurant/">
+                        <span class="navigation__chars navigation__chars--en">
+																						<em class="navigation__chars--inner">RESTAURANT</em>
+																			</span>
+                        <span class="navigation__chars navigation__chars--ja">
+																					<em class="navigation__chars--inner">レストラン</em>
+																			</span>
+                    </a>
+                </li>
+                <li class="navigation__item navigation__item--shop">
+                    <a href="/mock/shop/">
+                        <span class="navigation__chars navigation__chars--en">
+																						<em class="navigation__chars--inner">SHOP</em>
+																			</span>
+                        <span class="navigation__chars navigation__chars--ja">
+																					<em class="navigation__chars--inner">ショップ</em>
+																			</span>
+                    </a>
+                </li>
+                <li class="navigation__item navigation__item--wedding">
+                    <a href="/mock/wedding/">
+                        <span class="navigation__chars navigation__chars--en">
+																						<em class="navigation__chars--inner">WEDDING</em>
+																			</span>
+                        <span class="navigation__chars navigation__chars--ja">
+																					<em class="navigation__chars--inner">ウエディング</em>
+																			</span>
+                    </a>
+                </li>
+                <li class="navigation__item navigation__item--party">
+                    <a href="/mock/party/">
+                        <span class="navigation__chars navigation__chars--en">
+																						<em class="navigation__chars--inner">PARTY</em>
+																			</span>
+                        <span class="navigation__chars navigation__chars--ja">
+																					<em class="navigation__chars--inner">パーティー</em>
+																			</span>
+                    </a>
+                </li>
+                <li class="navigation__item navigation__item--facility">
+                    <a href="/mock/facility/">
+                        <span class="navigation__chars navigation__chars--en">
+																						<em class="navigation__chars--inner">FACILITY</em>
+																			</span>
+                        <span class="navigation__chars navigation__chars--ja">
+																					<em class="navigation__chars--inner">施設情報</em>
+																			</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="navigation__item navigation__item--restaurant">
+            <a href="/mock/restaurant/">
+                <span class="navigation__chars navigation__chars--en">
+																		<em class="navigation__chars--inner">RESTAURANT</em>
+															</span>
+                <span class="navigation__chars navigation__chars--ja">
+																	<em class="navigation__chars--inner">レストラン</em>
+															</span>
+            </a>
+        </li>
+        <li class="navigation__item navigation__item--shop">
+            <a href="/mock/shop/">
+                <span class="navigation__chars navigation__chars--en">
+																		<em class="navigation__chars--inner">SHOP</em>
+															</span>
+                <span class="navigation__chars navigation__chars--ja">
+																	<em class="navigation__chars--inner">ショップ</em>
+															</span>
+            </a>
+        </li>
+        <li class="navigation__item navigation__item--wedding">
+            <a href="/mock/wedding/">
+                <span class="navigation__chars navigation__chars--en">
+																		<em class="navigation__chars--inner">WEDDING</em>
+															</span>
+                <span class="navigation__chars navigation__chars--ja">
+																	<em class="navigation__chars--inner">ウエディング</em>
+															</span>
+            </a>
+        </li>
+        <li class="navigation__item navigation__item--party">
+            <a href="/mock/party/">
+                <span class="navigation__chars navigation__chars--en">
+																		<em class="navigation__chars--inner">PARTY</em>
+															</span>
+                <span class="navigation__chars navigation__chars--ja">
+																	<em class="navigation__chars--inner">パーティー</em>
+															</span>
+            </a>
+        </li>
+        <li class="navigation__item navigation__item--facility">
+            <a href="/mock/facility/">
+                <span class="navigation__chars navigation__chars--en">
+								<em class="navigation__chars--inner">FACILITY</em>
+					</span>
+                <span class="navigation__chars navigation__chars--ja">
+																	<em class="navigation__chars--inner">施設情報</em>
+															</span>
+            </a>
+        </li>
+    </ul>
+    <div class="test">hahaha</div>
+    <script>
+        $(function() {
+            $(".test").scrolltop();
+            $('.js-nav').ryukyumenu({
+                // addCloseButtonMobile: false
+            });
+        });
+    </script>
+</body>
+
+</html>
