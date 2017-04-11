@@ -5,7 +5,7 @@ Before your closing ```<body>``` tag add:<br>
 ```JavaScript
 <script type="text/javascript" src="yourpath/jquery.ryukyu.scrolltop.min.js"></script>
 ```
-##Example
+## Example
 Initialize with:
 ```JavaScript
 $(element).scrolltop();
